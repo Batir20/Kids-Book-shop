@@ -1,0 +1,350 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: neucha;
+    src: url(../fonts/Neucha-Regular.ttf);
+}
+@font-face {
+    font-family: lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+a, p, h1, h2, h3, h4, h5, h6 {
+    font-family: neucha;
+}
+h1, h2, p {
+    font-family: neucha;
+    font-weight: 900;
+}
+p {
+    font-weight: 300;
+}
+h3 {
+    font-weight: 700;
+}
+
+.hdr {
+    padding-bottom: 170px;
+}
+.nav-link {
+    font-family: neucha;
+}
+.navbar-brand {
+    font-family: neucha;
+    font-size: 28px;
+}
+.hdr__nav {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background: white;
+    border-radius: 15px;
+}
+.hdr__nav-form {
+    font-family: neucha;
+}
+.hdr__nav-form input {
+    width: 250px;
+}
+.hdr__main {
+    margin-top: 75px;
+    display: flex;
+}
+.hdr__block {
+    position: relative;
+    width: 500px;
+    margin-right: 350px;
+}
+.hdr__title {
+    font-family: neucha;
+    font-weight: 800;
+    font-size: 78px;
+}
+.hdr__sale-p {
+    color: rgb(203, 38, 38);
+    position: absolute;
+    font-family: 'neucha';
+    font-size: 36px;
+    top: 50px;
+    left: 189px;
+    font-weight: 900;
+    transform: rotateZ(325deg);
+}
+.hdr__text {
+    font-family: 'neucha';
+    font-weight: 500;
+    font-size: 18px;
+    color: #626262;
+}
+.hdr__right-block {
+    position: relative;
+}
+.harrypotter-img {
+    width: 520px;
+    margin-top: 10px;
+}
+.hdr__vector {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 424px;
+    z-index: -1
+}
+.hdr__transition {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 100px;
+}
+
+/* Header end */
+/* Best start */
+
+.best {
+    background: #FFDBA0;
+    padding: 100px 0px;
+    position: relative;
+}
+.section-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+}
+.section-p {
+    text-align: center;
+}
+.block {
+    background: linear-gradient(70deg, #2165ca, #c786edf7);
+    border-radius: 25px;
+    width: 550px;
+    height: 250px;
+    padding: 15px 20px;
+    position: relative;
+    margin-top: 50px;
+}
+.block img {
+    width: 150px;
+    position: absolute;
+    top: -40px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 49%) 8px 8px 17px 5px;
+}
+.carousel-main-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.best__block-title {
+    margin-left: 175px;
+    font-family: neucha;
+    color: white;
+    margin-bottom: 5px;
+}
+.author {
+    margin-left: 175px;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+.best__ratings {
+    position: absolute;
+    bottom: 30px;
+}
+.best__ratings i {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+.best__genres {
+    display: flex;
+    margin-left: 175px;
+    width: 250px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.genre {
+    background: rgba(255, 255, 255, 0.352);
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.genre:hover {
+    color: white;
+    box-shadow: #00000024 0px 0px 10px 10px;
+}
+.reviews {
+    margin-left: 175px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 20px;
+}
+.carousel-control-prev {
+    width: 5%;
+}
+.carousel-control-next {
+    width: 5%;
+}
+.section__transition {
+    position: absolute;
+    bottom: -149px;
+    transform: rotate(180deg);
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
+
+
+
+.genres-section {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.genres__box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.genres__block {
+    position: relative;
+    height: 300px;
+    /*width: 176px;*/
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.genres__block:hover .img-bg {
+    opacity: 0;
+}
+.genres__img {
+    width: auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.genres__name {
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.img-bg {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    opacity: 1;
+    transition: 0.5s;
+}
+.others-btn {
+    padding: 15px;
+    background: linear-gradient(45deg, #2165ca, #7e21ca);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 24px;
+    
+}
+.others-btn:hover {
+    color: white;
+}
+
+
+
+
+.age-box.active {
+    display: flex !important;
+    position: relative;
+    border-radius: 15px;
+}
+.age-img {
+    width: 100%;
+    border-radius: 15px;
+}
+.age-text {
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100px;
+    color: white;
+    background: rgb(54, 43, 133);
+    padding: 10px 0px;
+}
+.age-category__li .nav-link.active {
+    background: rgb(37, 32, 79);
+}
+
+
+
+.best-in-genre {
+    padding: 50px 0px;
+    position: relative;
+    background: #3d13602e;
+    margin-top: 50px;
+}
+.best-genre__books div {
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.genre-choose {
+    text-decoration: none;
+    color: #7e21ca;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+}
+.book {
+    width: 250px;
+    border-radius: 15px;
+    opacity: 0.5;
+    margin-top: 75px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.book.active {
+    opacity: 1;
+    margin-top: 0px;
+}
+.book__img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.book__desk {
+    text-align: center;
+    background: linear-gradient(360deg, #2165ca, #7e21ca);
+    padding: 5px;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+.book__desk p {
+    font-size: 18px;
+}
+.book-content {
+    display: none;
+}
+.book-content.active {
+    display: flex;
+}
+.book-span {
+    font-size: 0px;
+    font-family: neucha;
+}
