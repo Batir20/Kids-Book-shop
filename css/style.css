@@ -1,17 +1,11 @@
+@import url(fonts.css);
+@import url(root.css);
 * {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-@font-face {
-    font-family: neucha;
-    src: url(../fonts/Neucha-Regular.ttf);
-}
-@font-face {
-    font-family: lobster;
-    src: url(../fonts/Lobster-Regular.ttf);
 }
 a, p, h1, h2, h3, h4, h5, h6 {
     font-family: neucha;
@@ -99,6 +93,7 @@ h3 {
     width: 100%;
     height: 100px;
     bottom: 100px;
+    display: none;
 }
 
 /* Header end */
@@ -108,6 +103,13 @@ h3 {
     background: #FFDBA0;
     padding: 100px 0px;
     position: relative;
+}
+.best__a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
 }
 .section-title {
     text-align: center;
@@ -221,8 +223,15 @@ h3 {
     transition: 0.5s;
     overflow: hidden;
 }
-.genres__block:hover .img-bg {
-    opacity: 0;
+.genres__span {
+    font-size: 0px;
+    text-align: center;
+    transition: 0.3s;
+    font-family: neucha;
+    color: white;
+}
+.genres__block:hover .genres__span {
+    font-size: 20px;
 }
 .genres__img {
     width: auto;
@@ -239,10 +248,9 @@ h3 {
     transition: 0.5s;
 }
 .img-bg {
-    position: absolute;
-    top: 0;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.45);
+    /* background: rgb(22, 13, 65);*/
+    background: url(../img/oblojka.jpg) center / cover no-repeat ;
     width: 100%;
     height: 100%;
     display: flex;
@@ -251,6 +259,7 @@ h3 {
     border-radius: 25px;
     opacity: 1;
     transition: 0.5s;
+    flex-direction: column;
 }
 .others-btn {
     padding: 15px;
@@ -286,10 +295,13 @@ h3 {
     width: 100px;
     color: white;
     background: rgb(54, 43, 133);
-    padding: 10px 0px;
+    padding: 10px 10px;
 }
 .age-category__li .nav-link.active {
     background: rgb(37, 32, 79);
+}
+.age-block {
+    position: relative;
 }
 
 
