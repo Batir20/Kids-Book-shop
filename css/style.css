@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 }
-a, p, h1, h2, h3, h4, h5, h6 {
+a, p, h1, h2, h3, h4, h5, h6, li {
     font-family: neucha;
 }
 h1, h2, p {
@@ -37,6 +37,9 @@ h3 {
     z-index: 50;
     background: white;
     border-radius: 15px;
+}
+.hdr__nav.ftr-cl {
+    position: relative;
 }
 .hdr__nav-form {
     font-family: neucha;
@@ -359,4 +362,107 @@ h3 {
 .book-span {
     font-size: 0px;
     font-family: neucha;
+}
+
+
+
+img {
+    width: 100%;
+}
+.ftr {
+    padding: 50px 0px;
+}
+.ftr__li a {
+    cursor: pointer;
+}
+.recently__pack {
+    display: flex;
+}
+.recently__book {
+    width: 125px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.recently__book:hover .recently__name{
+    opacity: 0;
+}
+.recently__img {
+    border-radius: 10px;
+}
+.recently__name {
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: linear-gradient(0deg, #000, transparent);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 50px 5px 5px 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+    .hdr__transition {
+        bottom: 150px;
+    }
+}
+@media (max-width: 1200px) {
+    .hdr__transition {
+        bottom: 175px;
+    }
+    .harrypotter-img {
+        width: auto;
+        margin-top: 10px;
+    }
+    .hdr__block {
+        margin-right: 200px;
+    }
+    .carousel-main-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .book-name {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .genres__name {
+        font-size: 24px;
+    }
+}
+@media (max-width: 992px) {
+    .genres__img {
+        width: 100%;
+        height: auto;
+    }
+    .genres__block {
+        margin-top: 15px;
+        height: 325px;
+    }
+    .harrypotter-img {
+        display: none;
+    }
+    .hdr__vector {
+        display: none;
+    }
+    .hdr__transition {
+        bottom: 325px;
+    }
+}
+@media (max-width: 500px) {
+    .book__desk p {
+        font-size: 0px;
+    }
 }
