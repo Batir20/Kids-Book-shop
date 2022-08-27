@@ -366,6 +366,7 @@ h3 {
 
 
 
+
 img {
     width: 100%;
 }
@@ -384,12 +385,17 @@ img {
     position: relative;
     cursor: pointer;
     margin-right: 10px;
+    overflow: hidden;
 }
 .recently__book:hover .recently__name{
     opacity: 0;
 }
 .recently__img {
     border-radius: 10px;
+    transition: 0.5s;
+}
+.recently__book:hover .recently__img {
+    transform: scale(1.2);
 }
 .recently__name {
     font-size: 18px;
